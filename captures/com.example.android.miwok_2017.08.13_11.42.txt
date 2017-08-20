@@ -1,0 +1,47 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 15285160 Realtime: 15285160
+
+** MEMINFO in pid 7441 [com.example.android.miwok] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     2172     1904        0        0     8704     5999     2704
+  Dalvik Heap      271      236        0        0      854      342      512
+ Dalvik Other      162      160        0        0                           
+        Stack      176      176        0        0                           
+    Other dev        6        0        4        0                           
+     .so mmap      638       60       32        0                           
+    .apk mmap     1313      960        0        0                           
+    .dex mmap     3165     2028      124        0                           
+    .oat mmap      172        0        0        0                           
+    .art mmap     3848     3608        0        0                           
+   Other mmap       15        4        0        0                           
+      Unknown      213      180        0        0                           
+        TOTAL    12151     9316      160        0     9558     6341     3216
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:     3844
+         Native Heap:     1904
+                Code:     3204
+               Stack:      176
+            Graphics:        0
+       Private Other:      348
+              System:     2675
+ 
+               TOTAL:    12151       TOTAL SWAP PSS:        0
+ 
+ Objects
+               Views:        0         ViewRootImpl:        0
+         AppContexts:        2           Activities:        0
+              Assets:        2        AssetManagers:        2
+       Local Binders:        3        Proxy Binders:        7
+       Parcel memory:        2         Parcel count:        8
+    Death Recipients:        0      OpenSSL Sockets:        0
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

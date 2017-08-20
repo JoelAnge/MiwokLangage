@@ -1,0 +1,189 @@
+CURRENT STATS:
+Per-Package Stats:
+  * com.example.android.miwok / u0a82 / v1:
+      * com.example.android.miwok / u0a82 / v1:
+               TOTAL: 2.9% (18MB-19MB-20MB/14MB-14MB-15MB over 4)
+                 Top: 2.9% (18MB-19MB-20MB/14MB-14MB-15MB over 4)
+            (Cached): 53% (11MB-12MB-12MB/9.1MB-9.1MB-9.3MB over 4)
+
+Summary:
+  * com.example.android.miwok / u0a82 / v1:
+           TOTAL: 2.9% (18MB-19MB-20MB/14MB-14MB-15MB over 4)
+             Top: 2.9% (18MB-19MB-20MB/14MB-14MB-15MB over 4)
+        (Cached): 53% (11MB-12MB-12MB/9.1MB-9.1MB-9.3MB over 4)
+
+Run time Stats:
+  SOn /Norm: +1h15m19s34ms (running)
+      TOTAL: +1h15m19s34ms
+
+Memory usage:
+  Persist: 158MB (15 samples)
+  Top    : 104MB (81 samples)
+  ImpFg  : 60MB (71 samples)
+  ImpBg  : 13MB (61 samples)
+  Service: 25MB (92 samples)
+  Receivr: 7.4KB (32 samples)
+  LastAct: 784KB (12 samples)
+  CchCAct: 2.0MB (38 samples)
+  CchEmty: 150MB (56 samples)
+  TOTAL  : 513MB
+  ServRst: 424 (8 samples)
+
+          Start time: 2017-08-12 20:21:00
+  Total elapsed time: +1h15m19s42ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable     16    17    11     4     2     1     0     0     0     0     0
+Zone   0     Reclaimable      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Movable      9     8     5     4     0     0     0     0     0     0     0
+Zone   0         Reserve      7    11     5     4     2     1     1     0     1     1     0
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable     31   186   195    67    29     5     0     0     0     0     0
+Zone   0     Reclaimable      2     6     8     3     0     1     1     1     1     0     0
+Zone   0         Movable   1454   756   222   128    35    11     0     1     0     0     0
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0             CMA   1824  1826  1826  1805   825   536    82     7     2     1     1
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable     13    11     4     5     0     0     1     0     1     1     0
+Zone   0     Reclaimable      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Movable   2076   354   174    92    20    11     5     2     0     0    47
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+
+AGGREGATED OVER LAST 24 HOURS:
+System memory usage:
+  SOn /Norm: 3 samples:
+    Cached: 108MB min, 243MB avg, 498MB max
+    Free: 378MB min, 657MB avg, 803MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 42MB min, 46MB avg, 53MB max
+    Native: 105MB min, 108MB avg, 110MB max
+
+Per-Package Stats:
+  * com.example.android.miwok / u0a82 / v1:
+      * com.example.android.miwok / u0a82 / v1:
+               TOTAL: 6.9% (17MB-19MB-20MB/13MB-14MB-16MB over 38)
+                 Top: 6.9% (17MB-19MB-20MB/13MB-14MB-16MB over 38)
+          (Last Act): 0.01%
+            (Cached): 44% (11MB-12MB-12MB/9.0MB-9.1MB-9.5MB over 18)
+
+Summary:
+  * com.example.android.miwok / u0a82 / v1:
+           TOTAL: 6.9% (17MB-19MB-20MB/13MB-14MB-16MB over 38)
+             Top: 6.9% (17MB-19MB-20MB/13MB-14MB-16MB over 38)
+      (Last Act): 0.01%
+        (Cached): 44% (11MB-12MB-12MB/9.0MB-9.1MB-9.5MB over 18)
+
+Run time Stats:
+  SOff/Norm: +18s866ms
+  SOn /Norm: +11h47m31s70ms
+      TOTAL: +11h47m49s936ms
+
+Memory usage:
+  Kernel : 46MB (24 samples)
+  Native : 108MB (24 samples)
+  Persist: 158MB (282 samples)
+  Top    : 102MB (1062 samples)
+  ImpFg  : 57MB (1290 samples)
+  ImpBg  : 14MB (343 samples)
+  Service: 26MB (489 samples)
+  Receivr: 28KB (398 samples)
+  LastAct: 0.89MB (203 samples)
+  CchCAct: 4.8MB (5 samples)
+  CchEmty: 164MB (475 samples)
+  Cached : 243MB (24 samples)
+  Free   : 657MB (24 samples)
+  TOTAL  : 1.5GB
+  ServRst: 4.7KB (150 samples)
+
+          Start time: 2017-08-10 17:19:22
+  Total elapsed time: +11h48m0s894ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable     16    17    11     4     2     1     0     0     0     0     0
+Zone   0     Reclaimable      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Movable      9     8     5     4     0     0     0     0     0     0     0
+Zone   0         Reserve      7    11     5     4     2     1     1     0     1     1     0
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable     31   186   195    67    29     5     0     0     0     0     0
+Zone   0     Reclaimable      2     6     8     3     0     1     1     1     1     0     0
+Zone   0         Movable   1454   756   222   128    35    11     0     1     0     0     0
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0             CMA   1824  1826  1826  1805   825   536    82     7     2     1     1
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable     13    11     4     5     0     0     1     0     1     1     0
+Zone   0     Reclaimable      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Movable   2076   354   174    92    20    11     5     2     0     0    47
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+
+AGGREGATED OVER LAST 3 HOURS:
+System memory usage:
+  SOn /Norm: 1 samples:
+    Cached: 123MB min, 123MB avg, 123MB max
+    Free: 803MB min, 803MB avg, 803MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 42MB min, 42MB avg, 42MB max
+    Native: 110MB min, 110MB avg, 110MB max
+
+Per-Package Stats:
+  * com.example.android.miwok / u0a82 / v1:
+      * com.example.android.miwok / u0a82 / v1:
+               TOTAL: 15% (17MB-19MB-20MB/13MB-15MB-16MB over 27)
+                 Top: 15% (17MB-19MB-20MB/13MB-15MB-16MB over 27)
+            (Cached): 56% (11MB-12MB-12MB/9.1MB-9.2MB-9.5MB over 12)
+
+Summary:
+  * com.example.android.miwok / u0a82 / v1:
+           TOTAL: 15% (17MB-19MB-20MB/13MB-15MB-16MB over 27)
+             Top: 15% (17MB-19MB-20MB/13MB-15MB-16MB over 27)
+        (Cached): 56% (11MB-12MB-12MB/9.1MB-9.2MB-9.5MB over 12)
+
+Run time Stats:
+  SOff/Norm: +9s276ms
+  SOn /Norm: +4h15m59s733ms
+      TOTAL: +4h16m9s9ms
+
+Memory usage:
+  Kernel : 42MB (8 samples)
+  Native : 110MB (8 samples)
+  Persist: 157MB (102 samples)
+  Top    : 92MB (379 samples)
+  ImpFg  : 60MB (499 samples)
+  ImpBg  : 14MB (142 samples)
+  Service: 25MB (199 samples)
+  Receivr: 18KB (167 samples)
+  LastAct: 838KB (53 samples)
+  CchCAct: 10MB (3 samples)
+  CchEmty: 162MB (191 samples)
+  Cached : 123MB (8 samples)
+  Free   : 803MB (8 samples)
+  TOTAL  : 1.6GB
+  ServRst: 2.7KB (43 samples)
+
+          Start time: 2017-08-12 17:20:27
+  Total elapsed time: +4h16m10s196ms (partial) (swapped-out-pss) libart.so
+
+Available pages by page size:
+Zone   0       Unmovable     16    17    11     4     2     1     0     0     0     0     0
+Zone   0     Reclaimable      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Movable      9     8     5     4     0     0     0     0     0     0     0
+Zone   0         Reserve      7    11     5     4     2     1     1     0     1     1     0
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable     31   186   195    67    29     5     0     0     0     0     0
+Zone   0     Reclaimable      2     6     8     3     0     1     1     1     1     0     0
+Zone   0         Movable   1454   756   222   128    35    11     0     1     0     0     0
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0             CMA   1824  1826  1826  1805   825   536    82     7     2     1     1
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
+Zone   0       Unmovable     13    11     4     5     0     0     1     0     1     1     0
+Zone   0     Reclaimable      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Movable   2076   354   174    92    20    11     5     2     0     0    47
+Zone   0         Reserve      0     0     0     0     0     0     0     0     0     0     1
+Zone   0             CMA      0     0     0     0     0     0     0     0     0     0     0
+Zone   0         Isolate      0     0     0     0     0     0     0     0     0     0     0
