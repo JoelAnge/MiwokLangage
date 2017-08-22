@@ -1,25 +1,38 @@
 package com.example.android.miwok;
 
-import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.text.Layout;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class PhrasesActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class PhrasesFragment extends Fragment {
 
     private AudioOnItemClickListener mAudioOnItemClickListener;
 
+    public PhrasesFragment() {
+        // Required empty public constructor
+    }
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.word_list);
+    public void onStop() {
+        super.onStop();
+        mAudioOnItemClickListener.onStop();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.word_list, container, false);
+
         ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("Where are you going?", "minto wuksus", R.raw.phrase_where_are_you_going));
         words.add(new Word("What is your name?", "tinnә oyaase'nә", R.raw.phrase_what_is_your_name));
@@ -37,12 +50,12 @@ public class PhrasesActivity extends AppCompatActivity {
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
+        WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_phrases);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // word_list.xml file.
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
         // {@link ListView} will display list items for each word in the list of words.
@@ -50,13 +63,9 @@ public class PhrasesActivity extends AppCompatActivity {
         // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
         listView.setAdapter(adapter);
 
-        mAudioOnItemClickListener = new AudioOnItemClickListener(PhrasesActivity.this);
+        mAudioOnItemClickListener = new AudioOnItemClickListener(getActivity());
         listView.setOnItemClickListener(mAudioOnItemClickListener);
+        return rootView;
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mAudioOnItemClickListener.onStop();
-    }
 }

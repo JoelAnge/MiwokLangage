@@ -1,25 +1,38 @@
 package com.example.android.miwok;
 
-import android.app.Activity;
-import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
+import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static android.R.attr.id;
-
-public class NumbersActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class NumbersFragment extends Fragment {
 
     private AudioOnItemClickListener mAudioOnItemClickListener;
 
+    public NumbersFragment() {
+        // Required empty public constructor
+    }
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.word_list);
+    public void onStop() {
+        super.onStop();
+        mAudioOnItemClickListener.onStop();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.word_list, container, false);
+
         ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("one", "lutti", R.drawable.number_one, R.raw.number_one));
         words.add(new Word("two", "otiiko", R.drawable.number_two, R.raw.number_two));
@@ -37,12 +50,12 @@ public class NumbersActivity extends AppCompatActivity {
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_numbers);
+        WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_numbers);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // word_list.xml file.
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
         // {@link ListView} will display list items for each word in the list of words.
@@ -50,23 +63,9 @@ public class NumbersActivity extends AppCompatActivity {
         // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
         listView.setAdapter(adapter);
 
-        mAudioOnItemClickListener = new AudioOnItemClickListener(NumbersActivity.this);
+        mAudioOnItemClickListener = new AudioOnItemClickListener(getActivity());
         listView.setOnItemClickListener(mAudioOnItemClickListener);
-/*
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Word currentWord = adapterView.getItemAtPosition(i);
-                Word currentWord = (Word) adapterView.getItemAtPosition(i);
-                MediaPlayer mediaPlayer = MediaPlayer.create(NumbersActivity.this, currentWord.getAudioResourceId());
-                mediaPlayer.start();
-            }
-        }); */
+        return rootView;
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mAudioOnItemClickListener.onStop();
-    }
 }
